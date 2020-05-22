@@ -1,0 +1,383 @@
+
+*{
+  margin:0 ;
+  padding:0 ;
+}
+
+
+.navbar
+{
+  padding:22px 0px;
+  
+  background-color: transparent  !important ;
+  border-bottom: none !important;
+}
+
+.navbar ul  li a 
+{
+  color:rgba(222, 224, 212, 0.965);
+  text-transform: uppercase ;
+  font-weight: bold;
+  letter-spacing:0px ;
+  font-size: 14px;
+  transition: all  0.5s ease-in
+}
+
+.navbar ul li a:hover
+{
+  color:rgb(216, 230, 23) !important;
+  background-color: none;
+
+
+}
+
+.navbar-expand-lg .navbar-colapse
+{
+  border-color:transparent;
+}
+
+
+
+.navbar-toggler
+{
+  border: 1px solid white !important;
+  color:whitesmoke !important;
+  transition: all 0.5s ease-in;
+}
+.navbar-toggler:hover
+{
+  background-color:deepskyblue !important ;
+}
+.icon-bar{
+  color:white !important;
+  background-color: yellow !important;
+}
+.location
+{
+  border :0.5px solid yellow;
+  position: absolute;
+  border-radius: 100px;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+          slider starts
+=-=-=-=-=-=-=-=-=-=-=-=-==-=-*/
+.slider
+{
+  width :100%;
+  height:800px;
+  background-image:url(../img/5.1\ header.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+  color:yellow
+
+}
+.slider-overlay{
+  width: 100%;
+  height: 100%;
+  background:rgba(12, 0, 0, 0.65);
+  position: relative;
+}
+.slider-content{
+  position: absolute;
+  top: 20%;
+  width:100%
+}
+.icons .fa
+{
+  font-size: 40px;
+  margin-right: 7px;
+}
+
+/* Icons in bottom*/
+.social-networks  a.fa{
+  border: 1px solid yellow;
+  padding:10px;
+  color: yellow;
+  width: 35px;
+  height:35px;
+  border-radius: 20px;
+  transition: all 0.5s fade-in;
+}
+
+.social-networks  a.fa:hover
+{
+  text-decoration: none;
+  background-color: yellowgreen;
+  color:white;
+  border:1px solid black;
+}
+
+
+
+/* buttons in middle*/
+.btn1
+{
+  padding:10px 30px;
+  background-color:transparent;
+  color:whitesmoke;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 13px;
+  border: 2px solid rgb(198, 219, 9);
+  border-top-left-radius: 15px;
+  transition: all 0.5s ease-in;
+  margin-right: -6px;
+}
+.btn1:hover
+{
+  text-decoration: none;
+  color:blue;
+  background-color: yellow;
+  border:yellow;
+}
+.btn2
+{
+  padding:10px 30px;
+  background-color:transparent;
+  color:whitesmoke;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 13px;
+  border: 2px solid yellow;
+  border-bottom-right-radius: 15px;
+  transition: all 0.5s ease-in;
+}
+.btn2:hover
+{
+  text-decoration: none;
+  color:blue;
+  background-color: yellow;
+  border:yellow;
+}
+
+.slider .text,.slider .typed-cursor
+{
+  display: inline;
+  font-size: 40px;
+  text-transform: uppercase;
+  color:orangered;
+}
+.primary{
+  color:orangered
+}
+
+.secondary
+{
+  background-color: #34495e;
+
+}
+
+/*            services and styles      */
+
+
+.service-area
+{
+    margin-top: 30px;
+}
+
+.service-area p
+{
+   margin-bottom: -5px;
+}
+
+
+
+
+.service-wrap {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    z-index: 9;
+    margin-top: 20px;
+    
+}
+
+.service-wrap::before, .service-wrap::after {
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: -9;
+    transition: all 0.5s;
+    opacity: 0;
+    background: #c8e90c;    
+    
+}
+
+.service-wrap::before{
+    top: -37px;
+    left: 100%;  
+    
+}
+
+.service-wrap:hover:before{    
+    left: -27px;
+    opacity: 1;
+    
+}
+
+
+.service-wrap::after{
+     right: 100%;
+     bottom: -37px;
+    
+}
+
+.service-wrap:hover:after{
+     right: -27px;
+     opacity: 1;
+    
+}
+
+.service-wrap:hover{
+     color: white;    
+}
+
+.service-wrap:h3{
+     color: white;    
+}
+
+
+.service-wrap:hover h3{
+     color: white;    
+}
+
+
+.service-wrap:hover h3:after{
+     background-color: white;    
+}
+
+.service-icon i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+    
+}
+
+
+.service-wrap:hover .service-icon i{
+    
+    transform:rotate(360deg);
+}
+
+.service-wrap h3
+{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+    
+}
+
+.service-wrap p
+{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+/* style works*/
+.work{
+  margin-top: 25px;
+}
+.row.no-gutters [class*=col-]{
+  padding-left: 0%;
+  padding-right: 0%;
+
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+.img-wrapper img{
+
+  transition: transform 0.5s ease;
+  width: 100%;
+
+}
+
+.img-wrapper  img:hover
+{
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+/* 
+team stylessssss
+
+*/
+.team-member
+{
+    margin-top: 50px;
+}
+
+.team-member
+{
+    margin:0 15px;
+}
+ 
+.team-member-info
+{
+    padding: 10px 0 30px 0;
+}
+
+
+h3.team-member-name
+{
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+
+h3.team-member-designation
+{
+    color: #34c6d3;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    text-transform: capitalize;
+    font-style: italic;
+    
+}
+
+.social-list
+{
+    padding-left: 0;
+}
+
+.social-list li
+{
+ list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.social-list i
+{
+    font-size: 17px;
+}
+
+.icon-gray i
+{
+    color: #64707b;    
+    
+}
+  
+
+  
+
+
+
+
+
+
+
+
